@@ -12,12 +12,6 @@ A full-stack project management web app with role-based access control, task tra
 - **Kanban Board** — Visual To Do / In Progress / Done columns per project
 - **Dashboard** — Stats overview, recent tasks, overdue alerts
 
-## 🔑 Demo Accounts
-
-| Role   | Email                    | Password   |
-|--------|--------------------------|------------|
-| Admin  | admin@taskflow.com       | admin123   |
-| Member | member@taskflow.com      | member123  |
 
 ## ⚙️ Tech Stack
 
@@ -33,17 +27,6 @@ npm install
 npm start
 # Open http://localhost:3000
 ```
-
-## 🌐 Deploy to Railway
-
-1. Push to GitHub
-2. Create new Railway project → "Deploy from GitHub repo"
-3. Set environment variables:
-   - `JWT_SECRET` = any long random string
-   - `PORT` = 3000 (auto-set by Railway)
-4. Deploy — Railway auto-runs `npm start`
-
-> **For production persistence**: Add a PostgreSQL plugin in Railway and replace the in-memory `src/database.js` with a Postgres adapter using the `DATABASE_URL` env var.
 
 ## 🗂 Project Structure
 
